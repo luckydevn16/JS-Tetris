@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv='x-ua-compatible' content='ie=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>JS Panda Tetris</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Javascript Panda Tetris</h1>
+            <p class="author">Made by <a href="https://redhatdev16.github.io/portfolio/" target="_blank">redhatdev16</a></p>
+        </header>
+        <div class="container">
+            <div class="main__content">
+                <div class="column rules">
+                    <ul class="rules-list">
+                        <li class="rules__item">Adjust pieces with Arrow Left, Arrow Right;</li>
+                        <li class="rules__item">Get three pieces of one color in a row;</li>
+                        <li class="rules__item">One row = 30 points;</li>
+                        <li class="rules__item">Push GO!</li>
+                    </ul>
+                    <button class="play__btn">GO!</button>
+                    <div class="score">
+                        <h2>Your score:</h2>
+                        <div class="score__field">0</div>
+                    </div>
+                </div>
+                <div class="column field" class="tetris__field">
+                    <div id="tetris__field"></div>
+					<div class="control-panel">
+						<button class="control-btn to-left">
+							<span class="arrow left"></span>
+						</button>
+						<button class="control-btn to-right">
+							<span class="arrow right"></span>
+						</button>
+					</div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
